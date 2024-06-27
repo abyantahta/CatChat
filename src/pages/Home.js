@@ -27,7 +27,7 @@ const Home = () => {
                 <h2 className='text-2xl'>Felix Kjellberg</h2>
                 <h3 className='text-xl font-normal'>3 years, 2 months</h3>
                 <p className='text-xl font-normal mt-5'>Maine coon</p>
-                <Link className='text-lg font-semibold bg-biru rounded-md text-white px-6 py-2 hover:duration-75 duration-75 hover:brightness-125 ' to=''>Start Consultation</Link>
+                <Link className='text-lg font-semibold bg-biru rounded-md text-white px-6 py-2 hover:duration-75 duration-75 hover:brightness-125 ' to='/chat'>Start Consultation</Link>
               {/* </div> */}
               <img className='absolute right-0 top-0 h-full' src={catImage} alt="" />
               
