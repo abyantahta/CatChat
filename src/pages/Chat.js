@@ -22,6 +22,7 @@ const Chat = () => {
     }])
       setFiles('')
       setPreviews('')
+      setMessage('')
     console.log(messages)
   }
     useEffect(() => {
@@ -45,7 +46,7 @@ const Chat = () => {
         <img className='absolute w-full h-full top-0 left-0 -z-10' src={background} alt="" />        
         <img className='bg-white' src={statusBar} alt="" />
         <div className="bg-white pl-4 flex items-center ">
-          <img className='w-10' src={backArrow} alt="" />
+          <Link to='/home'><img className='w-10' src={backArrow} alt="" /> </Link>
           <img className='w-16' src={catIcon} alt="" />
           <h2 className='text-3xl'>CatChat</h2>
         </div>
@@ -62,7 +63,7 @@ const Chat = () => {
           return <img alt='moko' src={pic} />;
         })} */}
         <div className="screen px-8 pt-8 h-[830px] overflow-auto font-semibold text-left flex flex-col gap-6">
-            <p className='self-start w-3/4 text-xl bg-white p-6 shadow-xl rounded-b-xl rounded-r-xl break-words'>Tell us about the condition of your cat!</p>
+            <p className='self-start w-3/4 text-xl bg-white p-6 shadow-xl rounded-b-xl rounded-r-xl break-words'>Please upload your cat image to determine the breed!</p>
             {
               messages.map((message)=>{
                 if(message.sender==='user') return (
@@ -107,7 +108,7 @@ const Chat = () => {
                 setFiles(e.target.files);
                 }
               }}/>
-              <input type="text" onChange={(e)=>setMessage(e.target.value)} className='w-full  shadow-2xl rounded-md text-xl p-4 px-8 font-medium outline-none break-words' />
+              <input type="text" value={message} onChange={(e)=>setMessage(e.target.value)} className='w-full  shadow-2xl rounded-md text-xl p-4 px-8 font-medium outline-none break-words' />
               <button onClick={handleSend} className='cursor-pointer hover:scale-105 duration-75 hover:duration-75'>
               <img className='h-12' src={sendIcon} alt="" />
               </button>

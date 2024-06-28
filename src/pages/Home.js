@@ -43,7 +43,7 @@ const Home = () => {
               </div>
             </button>
             <h2 className='mt-8'>Cat Wiki</h2>
-            <Link className="w-full">
+            <Link to="/article/1" className="w-full">
               <div className="bg-yellow-400 h-42 rounded-t-xl mt-4 overflow-hidden">
                 <img className='w-full' src={cat1} alt="" />
               </div>
@@ -56,8 +56,8 @@ const Home = () => {
                 </div>
               </div>
             </Link>
-            <Link className="w-full mt-8 inline-block">
-              <div className="bg-yellow-400 h-42 overflow-hidden rounded-t-xl mt-4 overflow-hidden">
+            <Link to='' className="w-full mt-8 inline-block">
+              <div className="bg-yellow-400 h-42 rounded-t-xl mt-4 overflow-hidden">
                 <img className='w-full' src={cat2} alt="" />
               </div>
               <div className="bg-white p-6">

@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom'
 const Landing = () => {
   return (
     <div className="container relative text-4xl font-bold font-title  w-[600px] mx-auto h-[1100px] border-4 border-slate-950">
-        <img className='absolute w-full top-0 left-0 -z-10' src={background} alt="" />
+        {/* <img className='absolute w-full top-0 left-0 -z-10' src={background} alt="" /> */}
         <img className='sticky bg-white z-30 top-0 left-0 w-full' src={statusBar} alt="" />
         <div className="sticky flex items-center bg-white pb-2 px-6">
             <Link to='/home'>

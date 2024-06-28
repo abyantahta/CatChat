@@ -4,7 +4,8 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Landing from './pages/Landing';
-import Chat from './pages/Chat';
+import Chat from './pages/popo';
+import Article from './pages/Article';
 import Home from './pages/Home';
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path='/register' element={<Register/>}></Route>
       <Route path='/home' element={<Home/>}></Route>
       <Route path='/chat' element={<Chat/>}></Route>
+      <Route path='/article/:id' element={<Article/>}></Route>
     </Routes>
   </Router>
   </>
